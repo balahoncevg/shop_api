@@ -1,0 +1,34 @@
+[
+    {
+      "model": "products.category",
+      "pk": 1,
+      "fields": {
+        "name": "Фрукты",
+        "slug": "fruits",
+        "image": "categories/fruits.jpg"
+      }
+    },
+    {
+      "model": "products.subcategory",
+      "pk": 1,
+      "fields": {
+        "category": 1,
+        "name": "Цитрусовые",
+        "slug": "citrus",
+        "image": "subcategories/citrus.jpg"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 1,
+      "fields": {
+        "subcategory": 1,
+        "name": "Апельсин",
+        "slug": "orange",
+        "price": "100.00",
+        "image_small": "products/small/orange.jpg",
+        "image_medium": "products/medium/orange.jpg",
+        "image_large": "products/large/orange.jpg"
+      }
+    }
+  ]
