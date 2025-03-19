@@ -32,13 +32,13 @@ class ShopAPITestCase(TestCase):
         """Тест получения списка категорий."""
         response = self.client.get("/api/v1/categories/")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.data[0]["name"], "Фрукты")
+        self.assertEqual(response.data["results"][0]["name"], "Фрукты")
 
     def test_get_products(self):
         """Тест получения списка товаров."""
         response = self.client.get("/api/v1/products/")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.data[0]["name"], "Апельсин")
+        self.assertEqual(response.data["results"][0]["name"], "Апельсин")
 
     def test_add_to_cart(self):
         """Тест добавления товара в корзину."""
