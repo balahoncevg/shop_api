@@ -11,8 +11,8 @@ from products.models import (
 )
 from .serializers import (
     CategorySerializer,
-    ProductSerializer,
     CartSerializer,
+    ProductSerializer,
 )
 
 
